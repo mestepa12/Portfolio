@@ -1,9 +1,11 @@
 body {
-  margin: 0;
+  background: linear-gradient(to bottom right, #f0f8ff, #ffffff);
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
   color: #333;
+  margin: 0;
+  padding: 2rem;
 }
+
 
 header {
   background: #1e1e2f;
@@ -29,12 +31,20 @@ section {
 }
 
 .proyecto {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s;
 }
+
+.proyecto:hover {
+  background-color: #e0f0ff; /* azulito claro */
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
 
 footer {
   text-align: center;
@@ -42,3 +52,5 @@ footer {
   background: #ddd;
   margin-top: 2rem;
 }
+
+
